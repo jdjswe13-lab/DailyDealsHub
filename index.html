@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>DailyDealsHub | Best Amazon Deals Every Day</title>
 
+<meta name="description" content="Discover the best Amazon deals on electronics, fashion, gadgets, home essentials and more.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -28,7 +33,9 @@ DailyDealsHub
 
 <li><a href="#home">Home</a></li>
 
-<li><a href="#products">Products</a></li>
+<li><a href="#categories">Categories</a></li>
+
+<li><a href="#products">Deals</a></li>
 
 <li><a href="#about">About</a></li>
 
@@ -44,50 +51,108 @@ DailyDealsHub
 
 <div class="hero-content">
 
-<img
-src="images/file_0000000028508207a436ad3ecb38f4b2.png"
-alt="DailyDealsHub Banner"
-class="hero-banner">
+<div class="hero-text">
+
+<span class="hero-badge">
+🔥 Trending Amazon Deals
+</span>
+
+<h1>
+Discover the Best Deals Every Day
+</h1>
+
+<p>
+
+Find trending gadgets, football jerseys, fashion, electronics,
+home essentials and unique accessories at amazing prices.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#products" class="btn-primary">
+
+Shop Deals
+
+</a>
+
+<a href="#categories" class="btn-secondary">
+
+Browse Categories
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/file_0000000028508207a436ad3ecb38f4b2.png" alt="DailyDealsHub Banner">
+
+</div>
 
 </div>
 
 </section>
 
-<section class="categories">
+<section id="categories" class="categories">
 
-<h2>🔥 Popular Categories</h2>
+<h2>Popular Categories</h2>
 
 <div class="category-grid">
 
 <div class="category-card">
-📱
+
+<div class="category-icon">⚽</div>
+
+<h3>Sports</h3>
+
+<p>Football Jerseys & Accessories</p>
+
+</div>
+
+<div class="category-card">
+
+<div class="category-icon">🤖</div>
+
+<h3>Gadgets</h3>
+
+<p>Latest Trending Products</p>
+
+</div>
+
+<div class="category-card">
+
+<div class="category-icon">📱</div>
+
 <h3>Electronics</h3>
+
+<p>Smart Devices</p>
+
 </div>
 
 <div class="category-card">
-👕
-<h3>Fashion</h3>
+
+<div class="category-icon">🏠</div>
+
+<h3>Home</h3>
+
+<p>Kitchen & Home Essentials</p>
+
 </div>
 
-<div class="category-card">
-🏠
-<h3>Home & Kitchen</h3>
 </div>
 
-<div class="category-card">
-💄
-<h3>Beauty</h3>
-</div>
+</section>
 
-<div class="category-card">
-🎮
-<h3>Gaming</h3>
-</div>
+<section class="featured">
 
-<div class="category-card">
-⌚
-<h3>Accessories</h3>
-</div>
+<h2>Today's Featured Deals</h2>
+
+<div class="featured-banner">
+
+🔥 Limited Time Amazon Offers • Updated Daily • Best Prices
 
 </div>
 
@@ -95,25 +160,59 @@ class="hero-banner">
 
 <section id="products">
 
-<h2>Today's Best Deals</h2>
+<h2>Featured Products</h2>
 
 <div class="products">
 
-<!-- Product 1 -->
+<!-- PRODUCT 1 -->
 
-<div class="product">
+<div class="product-card">
 
-<img src="images/20260726_102801_0000.png"
-alt="Robot Keychain">
+<span class="deal-tag">
+Limited Time Deal
+</span>
 
-<h3>Eiliko Aquamarine Robot Keychain</h3>
+<img src="images/product1.png" alt="Manchester United Jersey">
 
-<p>
-Cute premium robot keychain with stylish design.
-Perfect for backpacks, keys and gifts.
+<div class="rating">
+
+⭐⭐⭐⭐☆ (4.6)
+
+</div>
+
+<h3>
+
+Manchester United Home Jersey
+
+</h3>
+
+<p class="delivery">
+
+🚚 Free Delivery
+
 </p>
 
-<a href="https://link.amazon/B0f5aSSnt" target="_blank">
+<div class="price-box">
+
+<span class="discount">
+-24%
+</span>
+
+<span class="price">
+
+₹4,553
+
+</span>
+
+</div>
+
+<p class="old-price">
+
+M.R.P. <del>₹5,999</del>
+
+</p>
+
+<a href="https://link.amazon/B0gWM1abB" target="_blank" class="buy-btn">
 
 Buy on Amazon
 
@@ -121,50 +220,105 @@ Buy on Amazon
 
 </div>
 
-<!-- Product 2 -->
+<!-- PRODUCT 2 -->
 
-<div class="product">
+<div class="product-card">
 
-<img src="images/product1.png"
-alt="Featured Product">
+<span class="deal-tag">
 
-<h3>Featured Amazon Product</h3>
+Best Seller
 
-<p>
+</span>
 
-High quality product selected for our daily deals.
+<img src="images/product2.png" alt="Football Jersey">
+
+<div class="rating">
+
+⭐⭐⭐⭐⭐ (4.8)
+
+</div>
+
+<h3>
+
+Men's Printed Football Jersey
+
+</h3>
+
+<p class="delivery">
+
+🚚 Free Delivery
 
 </p>
 
-<a href="https://link.amazon/B0gWM1abB"
-target="_blank">
+<div class="price-box">
+
+<span class="discount">
+
+-56%
+
+</span>
+
+<span class="price">
+
+₹398
+
+</span>
+
+</div>
+
+<p class="old-price">
+
+M.R.P. <del>₹899</del>
+
+</p>
+
+<a href="https://link.amazon/B0gUAgVSE" target="_blank" class="buy-btn">
 
 Buy on Amazon
 
 </a>
 
 </div>
+  <!-- PRODUCT 3 -->
 
-<!-- Product 3 -->
+<div class="product-card">
 
-<div class="product">
+<span class="deal-tag">
+Trending
+</span>
 
-<img src="images/product2.png"
-alt="Featured Product">
+<img src="images/20260726_102801_0000.png" alt="Eiliko Aquamarine Robot Keychain">
 
-<h3>Top Pick Product</h3>
+<div class="rating">
+⭐⭐⭐⭐⭐ (4.9)
+</div>
 
-<p>
+<h3>
+Eiliko Aquamarine Robot Keychain
+</h3>
 
-One of today's best value products on Amazon.
-
+<p class="delivery">
+🚚 Free Delivery
 </p>
 
-<a href="https://link.amazon/B0gUAgVSE"
-target="_blank">
+<div class="price-box">
 
+<span class="discount">
+-56%
+</span>
+
+<span class="price">
+₹14,229
+</span>
+
+</div>
+
+<p class="old-price">
+M.R.P. <del>₹32,637</del>
+</p>
+
+<a href="https://link.amazon/B0f5aSSnt" target="_blank" class="buy-btn">
 Buy on Amazon
-
 </a>
 
 </div>
@@ -173,41 +327,71 @@ Buy on Amazon
 
 </section>
 
-<section id="about">
+<section id="about" class="about">
 
-<h2>About DailyDealsHub</h2>
+<h2>Why Shop with DailyDealsHub?</h2>
 
-<p>
+<div class="about-grid">
 
-DailyDealsHub helps shoppers discover the best Amazon deals every day.
+<div class="about-card">
+<h3>🔥 Handpicked Deals</h3>
+<p>We carefully select trending Amazon products so you don't have to search for hours.</p>
+</div>
 
-We carefully select trending gadgets, fashion, home essentials, accessories and lifestyle products so you can shop with confidence.
+<div class="about-card">
+<h3>💰 Great Savings</h3>
+<p>Discover products with attractive discounts and value for money.</p>
+</div>
 
-Our goal is to save you time while helping you find great value.
+<div class="about-card">
+<h3>⭐ Trusted Shopping</h3>
+<p>All product links take you directly to Amazon to complete your purchase securely.</p>
+</div>
 
-</p>
+</div>
 
 </section>
 
-<section id="contact">
+<section id="contact" class="contact">
 
-<h2>Contact</h2>
+<h2>Contact Us</h2>
 
-<p>Email: jdjswe13@gmail.com</p>
+<div class="contact-box">
 
-<p>Thanks for visiting DailyDealsHub ❤️</p>
+<p>📧 <strong>Email:</strong> jdjswe13@gmail.com</p>
+
+<p>📌 <strong>Follow us on Pinterest</strong></p>
+
+<p>
+Thank you for visiting <strong>DailyDealsHub</strong>.
+New deals are added regularly, so check back often!
+</p>
+
+</div>
 
 </section>
 
 <footer>
 
+<div class="footer-content">
+
+<h2>DailyDealsHub</h2>
+
 <p>
-
-© 2026 DailyDealsHub • All Rights Reserved
-
+Your destination for discovering amazing Amazon deals every day.
 </p>
 
+<p class="copyright">
+© 2026 DailyDealsHub. All Rights Reserved.
+</p>
+
+</div>
+
 </footer>
+
+<button id="topBtn" title="Back to Top">
+⬆
+</button>
 
 <script src="script.js"></script>
 
