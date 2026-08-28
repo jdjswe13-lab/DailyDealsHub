@@ -652,60 +652,405 @@ section h2::after {
 
     gap: 10px;
 
-    margin-top: auto;
+/* ================================
+   PRODUCT CARD FIX
+   ================================ */
+
+.product-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 193, 7, 0.35);
+    border-radius: 24px;
+
+    padding: 16px;
+    margin: 20px 0;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.45),
+        inset 0 0 20px rgba(255, 193, 7, 0.03);
 }
 
-.discount {
-    color: #ff6464;
+
+/* ================================
+   IMAGE AREA
+   ================================ */
+
+.product-image {
+    position: relative;
+
+    width: 100%;
+    height: 360px;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    background: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+
+/* Product image */
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 18px;
+
+    transition: transform 0.35s ease;
+}
+
+
+/* Small zoom effect */
+
+.product-card:hover .product-image img {
+    transform: scale(1.03);
+}
+
+
+/* ================================
+   DISCOUNT BADGE
+   ================================ */
+
+.discount-badge {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    z-index: 5;
+
+    background: linear-gradient(
+        135deg,
+        #ffd45a,
+        #d99a00
+    );
+
+    color: #111;
+
+    padding: 10px 16px;
+
+    border-radius: 12px;
 
     font-size: 14px;
+    font-weight: 800;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ================================
+   PRODUCT INFORMATION
+   ================================ */
+
+.product-info {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+.product-info h3 {
+    margin: 8px 0 14px;
+
+    font-size: 20px;
+    line-height: 1.35;
+
+    font-weight: 800;
+
+    color: #ffffff;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ================================
+   RATING
+   ================================ */
+
+.rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    margin: 8px 0;
+
+    color: #ffd23f;
+
+    font-size: 16px;
     font-weight: 700;
 }
 
-.price {
-    color: var(--gold-light);
+.rating span {
+    color: #ffd23f;
+    font-size: 14px;
+}
 
-    font-size: 27px;
+
+/* ================================
+   BOUGHT
+   ================================ */
+
+.bought {
+    margin: 8px 0;
+
+    color: #eeeeee;
+
+    font-size: 15px;
+}
+
+
+/* ================================
+   DELIVERY
+   ================================ */
+
+.delivery {
+    margin: 10px 0;
+
+    color: #cccccc;
+
+    font-size: 15px;
+}
+
+
+/* ================================
+   PRICE
+   ================================ */
+
+.price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 14px 0 5px;
+}
+
+
+.current-price {
+    color: #ffd34e;
+
+    font-size: 32px;
+
+    font-weight: 900;
+}
+
+
+.discount {
+    color: #ff5260;
+
+    font-size: 18px;
+
     font-weight: 800;
 }
 
-.old-price {
-    color: #858585;
 
-    font-size: 13px;
+.mrp {
+    color: #888888;
 
-    margin: 3px 0 14px;
-}
+    font-size: 17px;
 
-.old-price del {
-    color: #777;
+    text-decoration: line-through;
 }
 
 
-/* Features */
+/* ================================
+   TAX
+   ================================ */
 
-.features {
-    list-style: none;
+.tax {
+    margin: 8px 0 14px;
 
-    margin: 5px 0 18px;
+    color: #cccccc;
 
-    padding: 0;
+    font-size: 14px;
 }
 
-.features li {
-    color: #c6c6c6;
 
-    font-size: 13px;
+/* ================================
+   DETAILS
+   ================================ */
 
-    padding: 5px 0;
+.product-details {
+    width: 100%;
+    box-sizing: border-box;
 
-    border-bottom: 1px solid rgba(255,255,255,.045);
+    margin-top: 12px;
 }
 
-.features li:last-child {
-    border-bottom: none;
+
+.product-details p {
+    margin: 7px 0;
+
+    color: #dddddd;
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
 }
 
+
+.product-details strong {
+    color: #ffffff;
+}
+
+
+/* ================================
+   DESCRIPTION
+   ================================ */
+
+.product-description {
+    color: #dddddd;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    margin: 14px 0;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ================================
+   BUY BUTTON
+   ================================ */
+
+.buy-btn {
+    display: flex;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    min-height: 54px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 18px;
+
+    padding: 14px 18px;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #ffd75a,
+        #d99b08
+    );
+
+    color: #111111;
+
+    font-size: 17px;
+    font-weight: 900;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 18px rgba(255, 193, 7, 0.18);
+
+    transition: all 0.25s ease;
+}
+
+
+.buy-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(255, 193, 7, 0.30);
+}
+
+
+/* ================================
+   MOBILE FIX
+   ================================ */
+
+@media (max-width: 600px) {
+
+    .product-card {
+        width: calc(100% - 16px);
+        margin: 16px 8px;
+
+        padding: 14px;
+
+        border-radius: 20px;
+    }
+
+    .product-image {
+        height: 330px;
+
+        border-radius: 16px;
+    }
+
+    .product-image img {
+        border-radius: 16px;
+
+        object-fit: cover;
+    }
+
+    .product-info h3 {
+        font-size: 18px;
+    }
+
+    .current-price {
+        font-size: 28px;
+    }
+
+    .discount {
+        font-size: 16px;
+    }
+
+    .buy-btn {
+        min-height: 52px;
+
+        font-size: 16px;
+    }
+}
+
+
+/* ================================
+   PREVENT HORIZONTAL OVERFLOW
+   ================================ */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+}
 
 /* =========================================================
    AMAZON BUTTON
